@@ -22,9 +22,9 @@ export function Plans() {
                         <button className="bg-brown300 hover:bg-brown200 text-brown100 text-base font-semibold px-9 py-3 rounded-lg">Contratar</button>
                     </div>
                     <div className="pb-6">
-                        <span className="font-normal text-sm">Opcional (R$50,00)
-                            e-mail personalizado
-                            (contato@meunegocio.com.br
+                        <span className="font-normal text-sm">Opcional (R$50,00)<br />
+                            e-mail personalizado<br />
+                            (contato@meunegocio.com.br)
                         </span>
                     </div>
                 </div>
@@ -53,9 +53,9 @@ export function Plans() {
                         <button className="bg-brown300 hover:bg-brown200 text-brown100 text-base font-semibold px-9 py-3 rounded-lg">Contratar</button>
                     </div>
                     <div className="pb-6">
-                        <span className="font-normal text-sm">Opcional (R$50,00)
-                            e-mail personalizado
-                            (contato@meunegocio.com.br
+                        <span className="font-normal text-sm">Opcional (R$50,00)<br />
+                            e-mail personalizado<br />
+                            (contato@meunegocio.com.br)
                         </span>
                     </div>
                 </div>
@@ -80,9 +80,9 @@ export function Plans() {
                         <button className="bg-brown300 hover:bg-brown200 text-brown100 text-base font-semibold px-9 py-3 rounded-lg">Contratar</button>
                     </div>
                     <div className="pb-6">
-                        <span className="font-normal text-sm">Opcional (R$50,00)
-                            e-mail personalizado
-                            (contato@meunegocio.com.br
+                        <span className="font-normal text-sm">Opcional (R$50,00)<br />
+                            e-mail personalizado<br />
+                            (contato@meunegocio.com.br)
                         </span>
                     </div>
                 </div>
