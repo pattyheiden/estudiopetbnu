@@ -88,7 +88,7 @@ export function Plans() {
                 </div>
             </div>
 
-            <div className="text-center font-semibold text-sm">
+            <div className="text-center font-semibold text-sm pt-3">
                 <span>*O conteúdo de ambas as redes sociais são iguais.<br />
                     *O conteúdo da postagem é fornecido pelo cliente. Enviamos a arte para aprovação antes da postagem.<br />
                     *Mensagem de boas vindas incluso nos pacotes, texto deverá ser formulado pelo cliente.</span>
