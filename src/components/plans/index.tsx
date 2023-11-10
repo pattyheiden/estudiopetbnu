@@ -21,7 +21,7 @@ export function Plans() {
                         <div className="pt-4 pb-4">Cronograma de postagem</div>
                     </div>
                     <div className="pt-155 pb-3">
-                        <Link href="/checkout">
+                        <Link href="/checkout" target="_blank">
                             <button className="bg-brown300 hover:bg-brown200 text-brown100 text-base font-semibold px-9 py-3 rounded-lg">Contratar</button>
                         </Link>
                     </div>
@@ -54,7 +54,7 @@ export function Plans() {
                         <div className="pt-4 pb-4">Google meu negócio <br /> Google Maps <br /> Seja encontrado no Google</div>
                     </div>
                     <div className="pt-12 pb-3">
-                        <Link href="/checkout">
+                        <Link href="/checkout" target="_blank">
                             <button className="bg-brown300 hover:bg-brown200 text-brown100 text-base font-semibold px-9 py-3 rounded-lg">Contratar</button>
                         </Link>
                     </div>
@@ -83,7 +83,7 @@ export function Plans() {
                         <div className="pt-4 pb-4">Google meu negócio <br /> Google Maps <br /> Seja encontrado no Google</div>
                     </div>
                     <div className="pt-12 pb-3">
-                        <Link href="/checkout">
+                        <Link href="/checkout" target="_blank">
                             <button className="bg-brown300 hover:bg-brown200 text-brown100 text-base font-semibold px-9 py-3 rounded-lg">Contratar</button>
                         </Link>
                     </div>
