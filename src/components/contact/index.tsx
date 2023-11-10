@@ -3,7 +3,7 @@ import { Form } from "./form";
 
 export function Contact() {
     return(
-        <div className="grid grid-cols-2 w-[1000px] m-auto mt-30 mb-30">
+        <div className="grid grid-cols-2 w-[1000px] m-auto mt-30 mb-10">
             <div className="flex flex-col bg-brown200 text-center pt-30 rounded-lg border-double border-8 border-brown100">
                 <span className='font-bold text-3xl text-brown400'>Contato</span>
                 <span className="pt-3 text-brown100 text-base">Ligue ou envie uma mensagem para nós. <br /> Retornamos em até 24h.</span>

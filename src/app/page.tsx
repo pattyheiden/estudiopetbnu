@@ -1,11 +1,12 @@
 import Logo from '@/app/assets/logo.png'
 import { Contact } from '@/components/contact'
+import { Footer } from '@/components/footer'
 import { Plans } from '@/components/plans'
 import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className='flex flex-col items-center pt-10 w-[1000px] m-auto'>
+    <div className='flex flex-col items-center pt-10 m-auto'>
       <Image src={Logo} alt='' height={130} />
       <div className='flex flex-col pt-30 text-center'>
         <span className='font-bold text-3xl'>
@@ -23,7 +24,7 @@ export default function Home() {
         </span>
       </div>
       <Plans />
-      <div className='text-center pt-30'>
+      <div className='text-center pt-30 w-[1000px] '>
         <span className='font-medium text-base'>Transforme sua presença no Instagram e comece a conquistar seguidores reais e engajados. Escolha um dos nossos pacotes de conteúdo e dê o primeiro passo para o sucesso.</span>
       </div>
       <div className='flex flex-col pt-30 text-center'>
@@ -31,8 +32,10 @@ export default function Home() {
           Não encontrou o que procurava?
         </span>
         <span className='pt-3 font-medium text-base'>Fale com a gente. Faremos um plano personalizado que atenda às suas exigências de negócio.</span>
-      </div>
+      </div >
       <Contact />
+      <Footer />
+
     </div>
   )
 }
