@@ -23,6 +23,9 @@ const config: Config = {
       },
       translate: {
         '18': '1.125rem',
+      },
+      width: {
+        '364': '22.75rem',
       }
     },
   },

@@ -3,10 +3,10 @@ import { Form } from "./form";
 
 export function Contact() {
     return(
-        <div className="grid grid-cols-2 w-[1000px] m-auto mt-30 mb-10">
+        <div className="grid lg:grid-cols-2 lg:w-[1000px] m-auto mt-30 mb-10">
             <div className="flex flex-col bg-brown200 text-center pt-30 rounded-lg border-double border-8 border-brown100">
                 <span className='font-bold text-3xl text-brown400'>Contato</span>
-                <span className="pt-3 text-brown100 text-base">Ligue ou envie uma mensagem para nós. <br /> Retornamos em até 24h.</span>
+                <span className="pt-3 text-brown100 text-base px-8 lg:px-0">Ligue ou envie uma mensagem para nós. <br /> Retornamos em até 24h.</span>
                 <span className="flex justify-center pt-6 gap-1 text-brown100">
                     <RiMapPin2Fill className="text-brown400 h-6 w-6"/>Somos de Blumenau/SC                    
                 </span>

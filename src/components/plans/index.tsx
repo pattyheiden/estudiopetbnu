@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export function Plans() {
     return (
-        <div className="w-[1000px]">
-            <div className="grid grid-cols-3 pt-30 gap-6 w-[1000px] mb-2">
+        <div className="lg:w-[1000px] mx-4">
+            <div className="grid lg:grid-cols-3 pt-30 gap-6 lg:w-[1000px] mb-2">
                 <div className="col-span-1 items-center justify-center text-center bg-white rounded-b-lg">
                     <div className="flex bg-brown400 text-center h-20 items-center justify-center rounded-t-lg">
                         <span className="text-white font-semibold text-xl">BASIC</span>
