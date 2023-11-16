@@ -6,7 +6,7 @@ import { api } from '@/services/api'
 import avatar from "@/app/assets/avatar1.png"
 // import { LuEye, LuEyeOff } from "react-icons/lu";
 import { useContext, useState } from "react";
-import { ToastContainer, toast } from 'react-toastify'
+import { toast } from 'react-toastify'
 import Link from "next/link";
 
 export default function Signin() {
