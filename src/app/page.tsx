@@ -13,7 +13,7 @@ import { useContext } from 'react'
 <Head>  
   <meta property="og:title" content="Estúdio Pet Bnu" />
   <meta property="og:description" content="Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio" />
-  <meta property="og:image" content="URL dhttps://www.canva.com/design/DAF0YRlbmFo/CoG7TV8uttWu0SLai1hxpQ/view?utm_content=DAF0YRlbmFo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=previewa Imagem" />
+  <meta property="og:image" content="URL dhttps://www.canva.com/design/DAF0YRlbmFo/CoG7TV8uttWu0SLai1hxpQ/view?utm_content=DAF0YRlbmFo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=previewa" />
   <meta property="og:url" content="udiopetbnu.com.br" />
   {/* Outras meta tags OpenGraph conforme necessário */}
 </Head>
