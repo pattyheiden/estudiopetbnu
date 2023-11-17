@@ -24,6 +24,8 @@ export const metadata: Metadata = {
     images: ['https://www.canva.com/design/DAF0YRlbmFo/CoG7TV8uttWu0SLai1hxpQ/view?utm_content=DAF0YRlbmFo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview'],
     title: "Estúdio Pet Bnu",
     description: "Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio",
+    locale: "pt-BR",
+    type: "website",
   }
 }
 
