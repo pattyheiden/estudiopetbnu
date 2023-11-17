@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
-import Head from 'next/head';
 import Logo from '@/app/assets/logo.png'
 import { MyContext } from '@/app/Context'
 import { Contact } from '@/components/contact'
@@ -9,13 +8,6 @@ import { Plans } from '@/components/plans'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useContext } from 'react'
-
-<Head>  
-  <meta property="og:title" content="Estúdio Pet Bnu" />
-  <meta property="og:description" content="Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio" />
-  <meta property="og:image" content="https://www.canva.com/design/DAF0YRlbmFo/CoG7TV8uttWu0SLai1hxpQ/view?utm_content=DAF0YRlbmFo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=previewa" />
-  <meta property="og:url" content="estudiopetbnu.com.br" />
-</Head>
 
 export default function Home() {
   const { email, logoff } = useContext(MyContext)
