@@ -6,7 +6,7 @@ import { api } from '@/services/api'
 import avatar from "@/app/assets/avatar1.png"
 // import { LuEye, LuEyeOff } from "react-icons/lu";
 import { useContext, useState } from "react";
-import { ToastContainer, toast } from 'react-toastify'
+import { toast } from 'react-toastify'
 import Link from "next/link";
 
 export default function Signin() {
@@ -45,12 +45,13 @@ export default function Signin() {
         } catch (error) { }
     }
     return (
-        <form 
+        <>        
+            <form 
         onSubmit={(e) => {
             login(e)
           }}>
-            <ToastContainer />
-            <div className="flex flex-col lg:w-[1000px] min-h-screen justify-center items-center m-auto">
+            
+            <div className="flex flex-col lg:w-[1000px] min-h-screen justify-center items-center m-auto ">                    
             <Image src={avatar} alt="" width={130} className="flex -mb-20 z-20 border-t-4 border-brown200/30 rounded-full py-4 justify-end" />
             <div className="flex flex-col w-364 mx-4 pl-4 pr-4 justify-center items-center bg-brown200/30 shadow-xl shadow-brown200 drop-shadow-2xl lg:w-96 gap-2 pt-20 pb-10 rounded-lg">
                 <input type="email"
@@ -84,7 +85,9 @@ export default function Signin() {
                     </span>
                 </div>
             </div>
-        </div>
+        </div>        
         </form>
+        
+        </>
     )
 }

@@ -1,7 +1,12 @@
 import Logo from '@/app/assets/logo.png'
 import { Accordion } from '@/components/accordion'
 import Image from 'next/image'
+import { Metadata } from 'next'
 import { LuChevronDown } from 'react-icons/lu'
+
+export const metadata: Metadata = {
+    title:  'Minha conta',
+}
 
 export default function Account() {
     return (

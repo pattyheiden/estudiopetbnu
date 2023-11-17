@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import './globals.css'
 import { MyContextProvider } from './Context'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
+import OpengraphImage from '@/app/assets/opengraph-image.png'
 
 
 const montserrat = Montserrat({
@@ -12,7 +15,16 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: 'Estúdio Pet Bnu',
+  title: {
+    default: "Estúdio Pet Bnu", template: "%s | Estúdio Pet Bnu",    
+  },
+  keywords: "instagram, impulsione seu instagram, criação de conteudo para instagram, criacao de conteudo para instagram, posts para instagram, storys para instagram, midia social para instagram e facebook, social midia, conteudo para petshop, conteúdo para petshop, pet shop, petshop",
+  description: "Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio",
+  openGraph:{
+    images: ['https://www.canva.com/design/DAF0YRlbmFo/CoG7TV8uttWu0SLai1hxpQ/view?utm_content=DAF0YRlbmFo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview'],
+    title: "Estúdio Pet Bnu",
+    description: "Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio",
+  }
 }
 
 export default function RootLayout({
@@ -26,6 +38,7 @@ export default function RootLayout({
         <MyContextProvider>
           <>
             <div>
+            <ToastContainer />
               {children}
             </div>
           </>

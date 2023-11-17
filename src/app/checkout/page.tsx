@@ -2,6 +2,12 @@ import Logo from '@/app/assets/logo.png'
 import { Footer } from '@/components/footer'
 import { Consent } from '@/components/input/Consent'
 import Image from 'next/image'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Finalizar compra',
+  }
+
 export default function Checkout() {
     return (
         <div className='flex flex-col items-center pt-10 m-auto'>
