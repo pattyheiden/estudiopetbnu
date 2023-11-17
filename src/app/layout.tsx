@@ -4,8 +4,6 @@ import './globals.css'
 import { MyContextProvider } from './Context'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
-import OpengraphImage from '@/app/assets/opengraph-image.png'
-
 
 const montserrat = Montserrat({
   weight: ['300', '400', '700', '800'],
@@ -20,12 +18,12 @@ export const metadata: Metadata = {
   },
   keywords: "instagram, impulsione seu instagram, criação de conteudo para instagram, criacao de conteudo para instagram, posts para instagram, storys para instagram, midia social para instagram e facebook, social midia, conteudo para petshop, conteúdo para petshop, pet shop, petshop",
   description: "Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio",
-  openGraph:{
-    images: ['https://www.canva.com/design/DAF0YRlbmFo/CoG7TV8uttWu0SLai1hxpQ/view?utm_content=DAF0YRlbmFo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview'],
-    title: "Estúdio Pet Bnu",
-    description: "Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio",
-    locale: "pt-BR",
+  openGraph: {
+    images: "https://estudiopetbnu.com.br/opengraph-image.png",
+    title:"Estúdio Pet Bnu",
     type: "website",
+    description: "Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio",
+    url: "https://estudiopetbnu.com.br/",
   }
 }
 
