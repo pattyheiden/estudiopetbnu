@@ -5,6 +5,7 @@ import { MyContextProvider } from './Context'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import Head from 'next/head'
+import GTM from './GTM'
 
 const montserrat = Montserrat({
   weight: ['300', '400', '700', '800'],
@@ -36,9 +37,21 @@ export default function RootLayout({
   return (
     <html lang="en" className='bg-brown100 text-brown400'>
       <Head>
-        <meta name="google-site-verification" content="Te8rMGb-LeHnt2RxhGc00rVfzC17dAXG8Bj7MHUfy3Y" />
+        <GTM />
       </Head>
       <body className={montserrat.className}>
+
+        <div
+          dangerouslySetInnerHTML={{
+            __html: `
+          <!-- Google Tag Manager (noscript) -->
+            <noscript>
+              <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZBZ2JBV" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+           </noscript>
+          <!-- End Google Tag Manager (noscript) -->`,
+          }}
+        />
+
         <MyContextProvider>
           <>
             <div>
