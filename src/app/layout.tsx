@@ -35,7 +35,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='bg-brown100 text-brown400'>   
-    <head>      
+    <head>    
+    <meta name="google-site-verification" content="Te8rMGb-LeHnt2RxhGc00rVfzC17dAXG8Bj7MHUfy3Y" />  
     <script dangerouslySetInnerHTML={{ __html: ` 
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
