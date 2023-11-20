@@ -12,7 +12,7 @@ import { useContext } from 'react'
 export default function Home() {
   const { email, logoff } = useContext(MyContext)
   return (
-    <div>
+    <div>        
       <div className='flex flex-col items-center pt-10 m-auto mx-4 '>
         <div className='lg:grid lg:grid-cols-3 lg:w-[1000px] w-full items-center justify-center'>
 
