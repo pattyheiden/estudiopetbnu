@@ -5,7 +5,6 @@ import { MyContextProvider } from './Context'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import Head from 'next/head'
-import GTM from './GTM'
 
 const montserrat = Montserrat({
   weight: ['300', '400', '700', '800'],
@@ -37,7 +36,17 @@ export default function RootLayout({
   return (
     <html lang="en" className='bg-brown100 text-brown400'>
       <Head>
-        <GTM />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-KZBZ2JBV');
+            `,
+          }}
+        />
       </Head>
       <body className={montserrat.className}>
 
