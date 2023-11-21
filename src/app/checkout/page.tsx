@@ -5,9 +5,18 @@ import Image from 'next/image'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Finalizar compra',
+    title: "Finalizar compra",
+    description: "Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio",
+    keywords: "instagram, impulsione seu instagram, criação de conteudo para instagram, criacao de conteudo para instagram, posts para instagram, storys para instagram, midia social para instagram e facebook, social midia, conteudo para petshop, conteúdo para petshop, pet shop, petshop",
+    openGraph: {
+      images: "https://estudiopetbnu.com.br/og.jpg",
+      title: "Estúdio Pet Bnu",
+      type: "website",
+      description: "Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio",
+      url: "https://estudiopetbnu.com.br/",
+    },
+    
   }
-
 export default function Checkout() {
     return (
         <div className='flex flex-col items-center pt-10 m-auto'>

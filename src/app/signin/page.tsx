@@ -8,6 +8,21 @@ import avatar from "@/app/assets/avatar1.png"
 import { useContext, useState } from "react";
 import { toast } from 'react-toastify'
 import Link from "next/link";
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: "Login",
+    description: "Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio",
+    keywords: "instagram, impulsione seu instagram, criação de conteudo para instagram, criacao de conteudo para instagram, posts para instagram, storys para instagram, midia social para instagram e facebook, social midia, conteudo para petshop, conteúdo para petshop, pet shop, petshop",
+    openGraph: {
+      images: "https://estudiopetbnu.com.br/og.jpg",
+      title: "Estúdio Pet Bnu",
+      type: "website",
+      description: "Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio",
+      url: "https://estudiopetbnu.com.br/",
+    },
+    
+  }
 
 export default function Signin() {
     const { changeToken } = useContext(MyContext)

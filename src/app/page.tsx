@@ -7,7 +7,22 @@ import { Footer } from '@/components/footer'
 import { Plans } from '@/components/plans'
 import Image from 'next/image'
 import Link from 'next/link'
+import type { Metadata } from 'next'
 import { useContext } from 'react'
+
+export const metadata: Metadata = {
+  title: "Estúdio Pet Bnu",
+  description: "Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio",
+  keywords: "instagram, impulsione seu instagram, criação de conteudo para instagram, criacao de conteudo para instagram, posts para instagram, storys para instagram, midia social para instagram e facebook, social midia, conteudo para petshop, conteúdo para petshop, pet shop, petshop",
+  openGraph: {
+    images: "https://estudiopetbnu.com.br/og.jpg",
+    title: "Estúdio Pet Bnu",
+    type: "website",
+    description: "Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio",
+    url: "https://estudiopetbnu.com.br/",
+  },
+  
+}
 
 export default function Home() {
   const { email, logoff } = useContext(MyContext)
