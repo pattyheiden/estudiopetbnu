@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     description: "Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio",
     url: "https://estudiopetbnu.com.br/",
   },
-  
+
 }
 
 export default function RootLayout({
@@ -34,19 +34,22 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='bg-brown100 text-brown400'>   
-    <head>    
-    <meta name="google-site-verification" content="I_yi9LXA_q33rXwmYWgsPFlXCm6WkapYPfpz-184pIw" />  
-    <script dangerouslySetInnerHTML={{ __html: ` 
+    <html lang="en" className='bg-brown100 text-brown400'>
+      <head>
+        <title>Estúdio Pet Bnu</title>
+        <meta name="description" content="Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio" />
+        <meta name="google-site-verification" content="I_yi9LXA_q33rXwmYWgsPFlXCm6WkapYPfpz-184pIw" />
+        <script dangerouslySetInnerHTML={{
+          __html: ` 
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-KZBZ2JBV');`}}>
-  </script>  
-      </head>   
-      <body className={montserrat.className}>     
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZBZ2JBV" height="0" width="0"></iframe>
+        </script>
+      </head>
+      <body className={montserrat.className}>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZBZ2JBV" height="0" width="0"></iframe>
         <MyContextProvider>
           <>
             <div>
