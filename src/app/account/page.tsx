@@ -1,21 +1,6 @@
 import Logo from '@/app/assets/logo.png'
 import { Accordion } from '@/components/accordion'
 import Image from 'next/image'
-import { Metadata } from 'next'
-
-export const metadata: Metadata = {
-    title: "Minha conta",
-    description: "Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio",
-    keywords: "instagram, impulsione seu instagram, criação de conteudo para instagram, criacao de conteudo para instagram, posts para instagram, storys para instagram, midia social para instagram e facebook, social midia, conteudo para petshop, conteúdo para petshop, pet shop, petshop",
-    openGraph: {
-      images: "https://estudiopetbnu.com.br/og.jpg",
-      title: "Estúdio Pet Bnu",
-      type: "website",
-      description: "Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio",
-      url: "https://estudiopetbnu.com.br/",
-    },
-    
-  }
 
 export default function Account() {
     return (

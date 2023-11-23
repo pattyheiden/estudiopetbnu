@@ -5,29 +5,22 @@ import { MyContext } from '@/app/Context'
 import { Contact } from '@/components/contact'
 import { Footer } from '@/components/footer'
 import { Plans } from '@/components/plans'
+import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import type { Metadata } from 'next'
 import { useContext } from 'react'
-
-export const metadata: Metadata = {
-  title: "Estúdio Pet Bnu",
-  description: "Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio",
-  keywords: "instagram, impulsione seu instagram, criação de conteudo para instagram, criacao de conteudo para instagram, posts para instagram, storys para instagram, midia social para instagram e facebook, social midia, conteudo para petshop, conteúdo para petshop, pet shop, petshop",
-  openGraph: {
-    images: "https://estudiopetbnu.com.br/og.jpg",
-    title: "Estúdio Pet Bnu",
-    type: "website",
-    description: "Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio",
-    url: "https://estudiopetbnu.com.br/",
-  },
-  
-}
 
 export default function Home() {
   const { email, logoff } = useContext(MyContext)
   return (
-    <div>        
+    <div>
+      <Head>
+        <title>Estúdio Pet Bnu</title>
+        <meta name="description" content="Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio" />
+        <meta property="og:title" content="Estúdio Pet Bnu" />
+        <meta property="og:description" content="Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio" />
+        <meta property="og:image" content="https://estudiopetbnu.com.br/og.jpg" />
+      </Head>
       <div className='flex flex-col items-center pt-10 m-auto mx-4 '>
         <div className='lg:grid lg:grid-cols-3 lg:w-[1000px] w-full items-center justify-center'>
 

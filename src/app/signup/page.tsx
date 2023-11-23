@@ -6,22 +6,7 @@ import { MyContext } from '@/app/Context'
 import { useContext, useState } from "react";
 import { toast } from 'react-toastify'
 import Link from "next/link";
-import type { Metadata } from 'next'
 import { api } from "@/services/api";
-
-export const metadata: Metadata = {
-    title: "Registre-se",
-    description: "Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio",
-    keywords: "instagram, impulsione seu instagram, criação de conteudo para instagram, criacao de conteudo para instagram, posts para instagram, storys para instagram, midia social para instagram e facebook, social midia, conteudo para petshop, conteúdo para petshop, pet shop, petshop",
-    openGraph: {
-      images: "https://estudiopetbnu.com.br/og.jpg",
-      title: "Estúdio Pet Bnu",
-      type: "website",
-      description: "Impulsione seu Instagram com conteúdo de qualidade e expanda seu negócio",
-      url: "https://estudiopetbnu.com.br/",
-    },
-    
-  }
 
 export default function Signup() {
     const { changeToken } = useContext(MyContext)
