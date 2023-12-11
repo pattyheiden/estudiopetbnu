@@ -1,6 +1,10 @@
 import Link from "next/link";
+import { MyContext } from '@/app/Context'
+import { useContext } from "react";
 
 export function Plans() {
+    const { changeSelectedPlan } = useContext(MyContext)
+
     return (
         <div className="lg:w-[1000px] mx-4">
             <div className="grid lg:grid-cols-3 pt-30 gap-6 lg:w-[1000px] mb-2">
@@ -21,8 +25,12 @@ export function Plans() {
                         <div className="pt-4 pb-4">Cronograma de postagem</div>
                     </div>
                     <div className="pt-155 pb-3">
-                        <Link href="/checkout" target="_blank">
-                            <button className="bg-brown300 hover:bg-brown200 text-brown100 text-base font-semibold px-9 py-3 rounded-lg">Contratar</button>
+                        <Link href="/checkout">
+                            <button className="bg-brown300 hover:bg-brown200 text-brown100 text-base font-semibold px-9 py-3 rounded-lg"
+                            onClick={async () => {
+                                await changeSelectedPlan('basic')
+                            }}
+                            >Contratar</button>
                         </Link>
                     </div>
                     <div className="pb-6">
@@ -54,8 +62,12 @@ export function Plans() {
                         <div className="pt-4 pb-4">Google meu negócio <br /> Google Maps <br /> Seja encontrado no Google</div>
                     </div>
                     <div className="pt-12 pb-3">
-                        <Link href="/checkout" target="_blank">
-                            <button className="bg-brown300 hover:bg-brown200 text-brown100 text-base font-semibold px-9 py-3 rounded-lg">Contratar</button>
+                        <Link href="/checkout" >
+                            <button className="bg-brown300 hover:bg-brown200 text-brown100 text-base font-semibold px-9 py-3 rounded-lg"
+                            onClick={async () => {
+                                await changeSelectedPlan('master')
+                            }}
+                            >Contratar</button>
                         </Link>
                     </div>
                     <div className="pb-6">
@@ -83,8 +95,12 @@ export function Plans() {
                         <div className="pt-4 pb-4">Google meu negócio <br /> Google Maps <br /> Seja encontrado no Google</div>
                     </div>
                     <div className="pt-12 pb-3">
-                        <Link href="/checkout" target="_blank">
-                            <button className="bg-brown300 hover:bg-brown200 text-brown100 text-base font-semibold px-9 py-3 rounded-lg">Contratar</button>
+                        <Link href="/checkout" >
+                            <button className="bg-brown300 hover:bg-brown200 text-brown100 text-base font-semibold px-9 py-3 rounded-lg"
+                            onClick={async () => {
+                                await changeSelectedPlan('ultimate')
+                            }}
+                            >Contratar</button>
                         </Link>
                     </div>
                     <div className="pb-6">

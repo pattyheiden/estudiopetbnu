@@ -14,9 +14,11 @@ interface MyContextType {
   confirmation: string
   nomeCanal: string
   tipo: string
-  plaNname: string
+  planName: string
+  selectedPlan: string
   statusPagarme: string
   changeTitle: (param: string) => void
+  changeSelectedPlan: (param: string) => void
   changeUserId: (param: number) => void
   changeToken: (param: string) => void
   logoff: () => void
@@ -39,8 +41,10 @@ export function MyContextProvider({ children }: MyContextProvideProps) {
 
   const [nomeCanal, setNomeCanal] = useState('')
   const [tipo, setTipo] = useState('')
-  const [plaNname, setPlanName] = useState('')
+  const [planName, setPlanName] = useState('')
+  const [selectedPlan, setSelectedPlan] = useState('')
   const [statusPagarme, setStatusPagarme] = useState('')
+  
 
   useEffect(() => {
     const tokenStorage = localStorage.getItem('estudiopetbnu-token')
@@ -72,6 +76,11 @@ export function MyContextProvider({ children }: MyContextProvideProps) {
   const changeTitle = (param: string) => {
     setTitle(param)
   }
+  
+  const changeSelectedPlan = (param: string) => {
+    debugger
+    setSelectedPlan(param)
+  }
 
   const changeUserId = (param: number) => {
     setUserId(param)
@@ -101,10 +110,12 @@ export function MyContextProvider({ children }: MyContextProvideProps) {
         confirmation,
         nomeCanal,
         tipo,
-        plaNname,
+        planName,
+        selectedPlan,
         statusPagarme,
         changeUserId,
         changeTitle,
+        changeSelectedPlan,
         changeToken,
         logoff,
       }}

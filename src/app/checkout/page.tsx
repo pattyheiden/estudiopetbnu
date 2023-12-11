@@ -1,18 +1,41 @@
+'use client'
 import Logo from '@/app/assets/logo.png'
+import { MyContext } from '@/app/Context'
+import { useContext, useEffect } from "react";
 import { Footer } from '@/components/footer'
 import { Consent } from '@/components/input/Consent'
 import Image from 'next/image'
 
 export default function Checkout() {
+    const { selectedPlan, name } = useContext(MyContext)
+    const getPrice = (param: string) => {
+        if(param === "basic"){
+            return "Basic R$ 210,00"
+        }
+        if(param === "master"){
+            return "Master R$ 510,00"
+        }
+        if(param === "ultimate"){
+            return "Ultimate R$ 990,00"
+        }
+
+    }
+
+    useEffect(() => {
+        if(!selectedPlan){
+            window.location.href = ('/')
+        }
+    }, [selectedPlan])
     return (
         <div className='flex flex-col items-center pt-10 m-auto'>
+            {selectedPlan}
             <Image src={Logo} alt='' height={130} />
             <div className='flex w-full bg-brown400 justify-center py-6 mt-30'>
                 <span className='text-brown100 font-semibold text-2xl'>Finalização de Assinatura</span>
             </div>
             <div className='flex lg:w-[1130px] mt-30 gap-4 flex-wrap mx-4'>
                 <span className='flex w-full text-base text-brown400 font-semibold pt-2 pb-2'>Assinatura</span>
-                <span className='text-base bg-brown300 text-brown100 font-extrabold px-2 py-2 rounded-lg'>PLANO BASIC (R$210,00/mês)</span>
+                <span className='text-base bg-brown300 text-brown100 font-extrabold px-2 py-2 rounded-lg'>{getPrice(selectedPlan)}</span>
                 <span className='flex w-full text-base text-brown400 font-semibold pt-2 pb-2'>Dados pessoais</span>
                 <input placeholder="Nome" className="flex w-[100%] h-12 rounded-lg border-b border-brown400 pl-4" />
                 <input placeholder="E-mail" className="flex lg:w-[47%] w-[100%] h-12 rounded-lg border-b border-brown400 pl-4" />
