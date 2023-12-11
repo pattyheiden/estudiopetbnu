@@ -5,13 +5,13 @@ import { MyContext } from '@/app/Context'
 import { Contact } from '@/components/contact'
 import { Footer } from '@/components/footer'
 import { Plans } from '@/components/plans'
-import Head from 'next/head'
+import { IoLogOutOutline, IoPersonOutline } from "react-icons/io5"
 import Image from 'next/image'
 import Link from 'next/link'
 import { useContext } from 'react'
 
 export default function Home() {
-  const { email, logoff } = useContext(MyContext)
+  const { email, name ,logoff } = useContext(MyContext)
   return (
     <div>
       <div className='flex flex-col items-center pt-10 m-auto mx-4 '>
@@ -32,16 +32,18 @@ export default function Home() {
                   </button>
                 </Link>
                 :
-                <>
+                <div className='flex items-center gap-2'>
                   {
-                    `Olá ${email}`
+                    `Olá ${name?.split(" ")[0]}`
                   }
-
-                  <button onClick={() => logoff()} className='bg-brown400 hover:bg-brown300 rounded-lg px-3 py-2 text-white'>
-                    Deslogar
+                  <Link href="/account">
+                    <IoPersonOutline className='h-6 w-6 text-brown400 hover:text-brown200 transition'/>
+                  </Link>
+                  <button onClick={() => logoff()} >
+                  <IoLogOutOutline className='h-6 w-6 text-brown400 hover:text-brown200 transition'/>
                   </button>
 
-                </>
+                </div>
             }
           </div>
 
