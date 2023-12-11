@@ -11,10 +11,36 @@ import Link from 'next/link'
 import { useContext } from 'react'
 
 export default function Home() {
-  const { email, name ,logoff } = useContext(MyContext)
+  const { email, name, logoff } = useContext(MyContext)
   return (
     <div>
+      <div className='flex lg:h-6 h-8 w-full bg-brown400'>
+      <div className='flex w-[1000px] mx-auto lg:justify-end justify-center'>
+      {
+              email === '' ?
+                <Link href="/signin">
+                  <button className='text-white'>
+                    Acessar conta
+                  </button>
+                </Link>
+                :
+                <div className='flex items-center gap-2 text-base font-medium  divide-x divide-brown200 text-white'>
+                  {
+                    `Olá, ${name?.split(" ")[0]}`
+                  }
+                  <Link href="/account">
+                    <IoPersonOutline className='h-5 w-5 text-white hover:text-brown100 transition' />
+                  </Link>
+                  <button onClick={() => logoff()}>
+                    <IoLogOutOutline className='h-5 w-5 ml-2 text-white hover:text-brown100 transition' />
+                  </button>
+
+                </div>
+            }
+      </div>
+      </div>
       <div className='flex flex-col items-center pt-10 m-auto mx-4 '>
+
         <div className='lg:grid lg:grid-cols-3 lg:w-[1000px] w-full items-center justify-center'>
 
           <div className='lg:flex lg:col-span-1 lg:w-full hidden ' />
@@ -23,29 +49,7 @@ export default function Home() {
             <Image src={Logo} alt='' height={130} />
           </div>
 
-          <div className='col-span-1 lg:ml-auto justify-center flex mt-10 lg:mt-0'>
-            {
-              email === '' ?
-                <Link href="/signin">
-                  <button className='bg-brown400 hover:bg-brown300 rounded-lg px-3 py-2 text-white'>
-                    Acessar conta
-                  </button>
-                </Link>
-                :
-                <div className='flex items-center gap-2'>
-                  {
-                    `Olá ${name?.split(" ")[0]}`
-                  }
-                  <Link href="/account">
-                    <IoPersonOutline className='h-6 w-6 text-brown400 hover:text-brown200 transition'/>
-                  </Link>
-                  <button onClick={() => logoff()} >
-                  <IoLogOutOutline className='h-6 w-6 text-brown400 hover:text-brown200 transition'/>
-                  </button>
-
-                </div>
-            }
-          </div>
+          
 
         </div>
         <div className='flex flex-col pt-30 text-center'>
